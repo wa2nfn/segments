@@ -1,0 +1,8 @@
+* **Maximum Outer Radius:** Take the larger of the (New Ring OD / 2) or (Lower Ring OD / 2).
+* **Minimum Inner Radius:** Take the smaller of the (New Ring ID / 2) or (Lower Ring ID / 2).
+* **Base Board Width:** Subtract the Minimum Inner Radius from the Maximum Outer Radius.
+* **Final Cut Width:** Add the calculated sagitta for the new ring, plus the user's defined exterior padding and interior padding.
+
+This approach guarantees the board is wide enough to catch the lower ring, reach the new target diameter, and leave enough meat for the curve. Adjusting the interior diameter down by the amount of the overhang is exactly what finding that minimum inner radius accomplishes.
+
+The only reason you would ever need the vertical ring height in this specific context is if you still wanted to keep that structural "Warning: extreme shallow slope" alert. But for the actual geometry of sizing the wood segments so you don't waste material while guaranteeing coverage, your overhang-based approach is mathematically sound and much more precise.

@@ -1,0 +1,18 @@
+# This is a sample wedges.txt file. Its use is described
+# in the INFORMATION section which is the first question
+# presented when you run the app. The values below will
+# over ride thos built-in. Order and case of letter does
+# not matter. Only list wedges that you have or can set with
+# an accurate protractor.
+precision=1/32
+color=blue
+kerf=.125
+6
+10
+12
+16
+18
+20
+24
+28
+32

@@ -1,0 +1,12 @@
+func swapChars(s string, r1, r2 rune) string {
+	return strings.Map(func(r rune) rune{
+		switch r {
+		case r1:
+			return r2
+		case: r2
+			return r1
+		default:
+			return r
+		}
+		},s)
+		}
